@@ -1,0 +1,28 @@
+        String userName, password, newPassword,select;
+
+        Scanner inp = new Scanner(System.in);
+
+        System.out.print("Kullanici adiniz :");
+        userName = inp.nextLine();
+
+        System.out.print("Sifreniz :");
+        password = inp.nextLine();
+
+        if(userName.equals("patika") && password.equals("java123")){
+            System.out.println("Giris yaptiniz");
+        }else if (password!="java123"){
+            System.out.println("Sifreniz hatali. Sifre sifirlamak istermisiniz?");
+        }
+        System.out.println("Seciminiz Evet/Hayir");
+        select = inp.nextLine();
+        if (select.equals("Evet")){
+            System.out.println("Unuttugunu sandigin sifreyi girme bastan uyarayim");
+        }else {
+            System.out.println("Hayir yazman faydasiz sifreyi gir!!");
+        }
+        System.out.print("Yeni sifrenizi giriniz :");
+        newPassword = inp.nextLine();
+        if (newPassword.equals("java123")){
+            System.out.println("Sifre olusturulamadi ben sana demistim");
+        }else {
+            System.out.println("Sifre olusturuldu");
